@@ -20,7 +20,9 @@ let package = Package(
             dependencies: ["YogaSwift"]),
         .target(
             name: "YogaSwift",
-            dependencies: []),
+            dependencies: ["CYoga"]),
+        .target(
+            name: "CYoga"),
         .testTarget(
             name: "YogaSwiftTests",
             dependencies: ["YogaSwift"]),

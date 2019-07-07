@@ -1,3 +1,1 @@
-struct YogaSwift {
-    var text = "Hello, World!"
-}
+import CYoga

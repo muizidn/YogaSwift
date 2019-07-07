@@ -1,2 +1,3 @@
 mac:
   build:
+    -Xlinker: ${PWD}/Submodules/Yoga/buck-out/gen/yoga#default,static/libyoga.a
