@@ -1,2 +1,5 @@
 mac:
-  build: null
+  build:
+    -Xlinker:
+    - ./Submodules/Yoga/buck-out/gen/yoga#default,static/libyoga.a
+    - -lc++

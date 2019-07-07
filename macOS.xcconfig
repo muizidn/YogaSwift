@@ -1,0 +1,1 @@
+OTHER_LDFLAGS	=	$(inherited) ./Submodules/Yoga/buck-out/gen/yoga#default,static/libyoga.a -lc++ 

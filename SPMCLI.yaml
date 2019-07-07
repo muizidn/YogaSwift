@@ -1,3 +1,10 @@
 mac:
   build:
-    -Xlinker: ${PWD}/Submodules/Yoga/buck-out/gen/yoga#default,static/libyoga.a
+    -Xlinker: 
+      - ${PWD}/Submodules/Yoga/buck-out/gen/yoga#default,static/libyoga.a
+      - -lc++
+
+xcconfig:
+  name: macOS.xcconfig
+  keys:
+    OTHER_LDFLAGS: -Xlinker
