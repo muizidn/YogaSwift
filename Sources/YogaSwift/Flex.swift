@@ -8,7 +8,7 @@
 import Foundation
 
 public extension YogaLayout {
-    
+
     @discardableResult
     func direction(_ value: Direction) -> YogaLayout {
         self.direction = value
@@ -22,13 +22,13 @@ public extension YogaLayout {
     }
 
     @discardableResult
-    func flexGrow(_ value: YogaUnitValue) -> YogaLayout {
+    func flexGrow(_ value: Float) -> YogaLayout {
         self.flexGrow = value
         return self
     }
 
     @discardableResult
-    func flexShrink(_ value: YogaUnitValue) -> YogaLayout {
+    func flexShrink(_ value: Float) -> YogaLayout {
         self.flexShrink = value
         return self
     }
@@ -53,7 +53,7 @@ public enum FlexDirection: UInt32 {
     case rowReverse
 }
 
-public enum FlexWrap {
+public enum FlexWrap: UInt32 {
     case noWrap
     case wrap
     case wrapReverse

@@ -11,7 +11,7 @@ let package = Package(
             targets: ["example"]),
         .library(
             name: "YogaSwift",
-            targets: ["YogaSwift"]),
+            targets: ["YogaSwift"])
     ],
     dependencies: [],
     targets: [
@@ -25,6 +25,6 @@ let package = Package(
             name: "CYoga"),
         .testTarget(
             name: "YogaSwiftTests",
-            dependencies: ["YogaSwift"]),
+            dependencies: ["YogaSwift"])
     ]
 )

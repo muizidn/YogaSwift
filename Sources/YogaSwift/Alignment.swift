@@ -7,26 +7,25 @@
 
 import Foundation
 
-
 public extension YogaLayout {
     @discardableResult
     func justifyContent(_ value: JustifyContent) -> YogaLayout {
         self.justifyContent = value
         return self
     }
-    
+
     @discardableResult
     func alignItems(_ value: Align) -> YogaLayout {
         self.alignItems = value
         return self
     }
-    
+
     @discardableResult
     func alignSelf(_ value: Align) -> YogaLayout {
         self.alignSelf = value
         return self
     }
-    
+
     @discardableResult
     func alignContent(_ value: Align) -> YogaLayout {
         self.alignContent = value
@@ -42,7 +41,6 @@ public enum JustifyContent: UInt32 {
     case spaceAround
     case spaceEvenly
 }
-
 
 public enum Align: UInt32 {
     case auto

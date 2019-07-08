@@ -13,28 +13,39 @@ public extension YogaLayout {
         self.width = value
         return self
     }
-    
+
     @discardableResult
     func height(_ value: YogaUnitValue) -> YogaLayout {
         self.height = value
         return self
     }
-    
+
     @discardableResult
     func padding(_ value: Edge) -> YogaLayout {
         self.padding = value
         return self
     }
-    
+
     @discardableResult
     func border(_ value: Edge) -> YogaLayout {
         self.border = value
         return self
     }
-    
+
     @discardableResult
     func margin(_ value: Edge) -> YogaLayout {
         self.margin = value
         return self
     }
+
+    @discardableResult
+    func positionType(_ value: PositionType) -> YogaLayout {
+        self.positionType = value
+        return self
+    }
+}
+
+public enum PositionType: UInt32 {
+    case relative
+    case absolute
 }

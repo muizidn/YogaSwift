@@ -11,5 +11,6 @@ let view = View()
 
 view.layout()
     .direction(.leftToRight)
-    .flexGrow(10%)
-    .padding(.horizontal(10))
+    .flexGrow(1)
+    .padding(.horizontal(10~))
+    .border(.all(100%))
